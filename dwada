@@ -1,10 +1,9 @@
-repeat
-for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.hotbar["5"]["3"]:GetChildren()) do
-        if v:FindFirstChild("1") ~= nil then
+for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.hotbar["1"]["4"]:GetChildren()) do
+        if v:FindFirstChild("3") ~= nil then
             local uicorner = Instance.new("UICorner")
             v["5"]["3"]:Destroy()
             v["3"].BackgroundColor3 = Color3.fromRGB(255,0,255)
             v["2"].BorderSizePixel = 2
-            uicorner.Parent = v["1"]
+            uicorner.Parent = v["2"]
         end
     end
